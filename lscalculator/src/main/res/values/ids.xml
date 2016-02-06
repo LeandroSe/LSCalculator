@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="lsCalculatorDisplay" type="id" />
+    <item name="lsCalculatorNumberPad" type="id" />
+    <item name="lsCalculatorFunctionPad" type="id" />
+
+    <item name="lsCalculatorDigit0" type="id" />
+    <item name="lsCalculatorDigit1" type="id" />
+    <item name="lsCalculatorDigit2" type="id" />
+    <item name="lsCalculatorDigit3" type="id" />
+    <item name="lsCalculatorDigit4" type="id" />
+    <item name="lsCalculatorDigit5" type="id" />
+    <item name="lsCalculatorDigit6" type="id" />
+    <item name="lsCalculatorDigit7" type="id" />
+    <item name="lsCalculatorDigit8" type="id" />
+    <item name="lsCalculatorDigit9" type="id" />
+    <item name="lsCalculatorDigitFloatingPoint" type="id" />
+    <item name="lsCalculatorDigitResult" type="id" />
+
+    <item name="lsCalculatorFunctionDelete" type="id" />
+    <item name="lsCalculatorFunctionDivision" type="id" />
+    <item name="lsCalculatorFunctionMultiplication" type="id" />
+    <item name="lsCalculatorFunctionMinus" type="id" />
+    <item name="lsCalculatorFunctionPlus" type="id" />
+</resources>

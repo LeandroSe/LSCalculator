@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".app.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <br.com.tsujiguchi.lscalculator.view.LSDisplay
+                android:id="@id/lsCalculatorDisplay"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@android:id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="none"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textAppearance="?android:textAppearanceLarge" />
+
+                <TextView
+                    android:id="@android:id/text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+            </br.com.tsujiguchi.lscalculator.view.LSDisplay>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <include
+                layout="@layout/ls_number_pad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <include
+                layout="@layout/ls_function_pad"
+                android:layout_width="@dimen/function_keyboard_width"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

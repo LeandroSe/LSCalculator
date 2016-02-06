@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LSNumberPadLayout">
+        <attr name="rowCount" format="integer" />
+        <attr name="columnCount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="LSButton">
+        <attr name="columnSize" format="integer" />
+    </declare-styleable>
+
+</resources>

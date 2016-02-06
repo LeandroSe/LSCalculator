@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.tsujiguchi.lscalculator.view.LSFunctionPadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/lsCalculatorFunctionPad"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/lsFunctionPadBackgroundPrimary"
+    android:orientation="vertical">
+
+    <br.com.tsujiguchi.lscalculator.view.LSImagemButton
+        android:id="@id/lsCalculatorFunctionDelete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@android:drawable/ic_input_delete"
+        app:theme="@style/LSImagemButton" />
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorFunctionMultiplication"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/functionMultiplication"
+        app:theme="@style/LSButton" />
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorFunctionDivision"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/functionDivision"
+        app:theme="@style/LSButton" />
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorFunctionMinus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/functionMinus"
+        app:theme="@style/LSButton" />
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorFunctionPlus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/functionPlus"
+        app:theme="@style/LSButton" />
+
+</br.com.tsujiguchi.lscalculator.view.LSFunctionPadLayout>

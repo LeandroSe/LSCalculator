@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.tsujiguchi.lscalculator.view.LSNumberPadLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/lsCalculatorNumberPad"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/lsNumberPadBackgroundPrimary"
+    app:columnCount="3"
+    app:rowCount="4">
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorDigit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digit1"
+        android:theme="@style/LSButton" />
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorDigit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digit2"
+        android:theme="@style/LSButton" />
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorDigit3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digit3"
+        android:theme="@style/LSButton" />
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorDigit4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digit4"
+        android:theme="@style/LSButton" />
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorDigit5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digit5"
+        android:theme="@style/LSButton" />
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorDigit6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digit6"
+        android:theme="@style/LSButton" />
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorDigit7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digit7"
+        android:theme="@style/LSButton" />
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorDigit8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digit8"
+        android:theme="@style/LSButton" />
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorDigit9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digit9"
+        android:theme="@style/LSButton" />
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorDigit0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digit0"
+        android:theme="@style/LSButton" />
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorDigitFloatingPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digitFloatingPoint"
+        android:theme="@style/LSButton" />
+
+    <br.com.tsujiguchi.lscalculator.view.LSButton
+        android:id="@id/lsCalculatorDigitResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/digitResult"
+        android:theme="@style/LSButton" />
+
+</br.com.tsujiguchi.lscalculator.view.LSNumberPadLayout>
