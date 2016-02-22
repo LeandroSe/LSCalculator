@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import br.com.tsujiguchi.lscalculator.math.MathString;
+import br.com.tsujiguchi.lscalculator.math.exception.NullResultException;
 
 /**
  * Created by leandrose on 31/12/15.
@@ -83,18 +84,6 @@ public class LSDisplay extends LinearLayout {
 
     public void setText1(String text1) {
         mTextView1.setText(text1);
-
-        try {
-            if (text1.length() > 0) {
-                setText2(String.valueOf(MathString.calc(text1)));
-            } else {
-                setText2("");
-            }
-        } catch (Exception e) {
-        }
-
-        invalidate();
-        requestLayout();
     }
 
     public String getText1() {
@@ -109,14 +98,46 @@ public class LSDisplay extends LinearLayout {
         return mTextView2.getText().toString();
     }
 
-//    public double getResult(){
-//
-//    }
+    public double result() {
+        try {
+            if (mTextView1.getText().length() > 0) {
+                double result = MathString.calc(mTextView1.getText().toString());
+
+                setText1(String.valueOf(result));
+                setText2("");
+
+                mState = STATE_RESULT;
+
+                return result;
+            } else {
+                setText2("");
+
+                throw new NullResultException();
+            }
+        } catch (Exception e) {
+            throw e;
+        }
+    }
+
+    private void previewResult() {
+        try {
+            double result = MathString.calc(mTextView1.getText().toString());
+            setText2(String.valueOf(result));
+        } catch (RuntimeException re) {
+        }
+    }
 
     // OnSendCharacterListener
 
     public void onSendCharacter(String character) {
-        setText1(mTextView1.getText() + character);
+        if (STATE_RESULT == mState) {
+            mState = STATE_CALCULING;
+            setText1(character);
+        } else {
+            setText1(mTextView1.getText() + character);
+        }
+
+        previewResult();
     }
 
 }
