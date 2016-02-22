@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 import br.com.tsujiguchi.lscalculator.math.MathString;
 import br.com.tsujiguchi.lscalculator.math.exception.NullResultException;
 
@@ -62,7 +64,6 @@ public class LSDisplay extends LinearLayout {
         // LAYOUT
         setOrientation(LinearLayout.VERTICAL);
         setGravity(Gravity.CENTER_VERTICAL);
-
     }
 
     @Override
@@ -86,12 +87,20 @@ public class LSDisplay extends LinearLayout {
         mTextView1.setText(text1);
     }
 
+    public void setText1(double text1) {
+        setText1(convertNumber(text1));
+    }
+
     public String getText1() {
         return mTextView1.getText().toString();
     }
 
     public void setText2(String text2) {
         mTextView2.setText(text2);
+    }
+
+    public void setText2(double text2) {
+        setText2(convertNumber((text2)));
     }
 
     public String getText2() {
@@ -103,7 +112,7 @@ public class LSDisplay extends LinearLayout {
             if (mTextView1.getText().length() > 0) {
                 double result = MathString.calc(mTextView1.getText().toString());
 
-                setText1(String.valueOf(result));
+                setText1(result);
                 setText2("");
 
                 mState = STATE_RESULT;
@@ -122,8 +131,20 @@ public class LSDisplay extends LinearLayout {
     private void previewResult() {
         try {
             double result = MathString.calc(mTextView1.getText().toString());
-            setText2(String.valueOf(result));
+            setText2(result);
         } catch (RuntimeException re) {
+        }
+    }
+
+    private final String convertNumber(double number) {
+        double numberInt = Math.floor(number);
+        double numFraction = number - numberInt;
+
+        if (numFraction == 0) {
+            DecimalFormat formatter = new DecimalFormat("0");
+            return formatter.format(number);
+        } else {
+            return String.valueOf(number);
         }
     }
 
