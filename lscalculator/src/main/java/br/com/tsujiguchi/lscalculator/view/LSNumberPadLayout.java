@@ -124,8 +124,7 @@ public class LSNumberPadLayout extends ViewGroup implements View.OnClickListener
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.lsCalculatorDigitResult) {
-            mDisplay.setText1(mDisplay.getText2());
-            mDisplay.setText2("");
+            mDisplay.result();
         } else {
             mDisplay.onSendCharacter(((LSButton) v).getText().toString());
         }

@@ -1,4 +1,4 @@
-package br.com.tsujiguchi.lscalculatorlibrary.math.operador;
+package br.com.tsujiguchi.lscalculator.math.operador;
 
 /**
  * Created by leandrose on 09/01/16.

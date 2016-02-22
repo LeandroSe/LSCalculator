@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import br.com.tsujiguchi.lscalculatorlibrary.math.MathString;
+import br.com.tsujiguchi.lscalculator.math.MathString;
 
 /**
  * Created by leandrose on 31/12/15.
@@ -108,6 +108,10 @@ public class LSDisplay extends LinearLayout {
     public String getText2() {
         return mTextView2.getText().toString();
     }
+
+//    public double getResult(){
+//
+//    }
 
     // OnSendCharacterListener
 

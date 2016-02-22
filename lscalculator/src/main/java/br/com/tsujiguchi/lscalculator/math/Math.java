@@ -1,8 +1,8 @@
-package br.com.tsujiguchi.lscalculatorlibrary.math;
+package br.com.tsujiguchi.lscalculator.math;
 
 import java.util.ArrayList;
 
-import br.com.tsujiguchi.lscalculatorlibrary.math.operador.Operador;
+import br.com.tsujiguchi.lscalculator.math.operador.Operador;
 
 /**
  * Created by leandrose on 09/01/16.
